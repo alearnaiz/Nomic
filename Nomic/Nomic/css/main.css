@@ -1,0 +1,57 @@
+BODY
+{
+	background-color: #CFD1D5;
+}
+#welcome
+{
+	color: #B3072B;
+}
+#divCreate
+{
+	margin-bottom: 50px;
+}
+.divLaw
+{
+	margin-bottom: 75px;
+}
+.deleteLaw
+{
+	display: block;
+	width: 41px;
+	height: 27px;
+	clear: both;
+	float: right;
+	cursor: pointer;
+	font-size: 7pt;
+}
+.textLaw
+{
+	font-size: 15pt;
+}
+#writeLaw
+{
+	font-size: 12pt;
+}
+#notes
+{
+	font-size: 12pt;
+}
+#laws
+{
+	font-size: 8pt;
+}
+#create
+{
+	width: 74px;
+	height: 35px;
+	background-color: #6E57B3;
+	border: 1px solid #000000;
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+#home
+{
+	display: block;
+	cursor: pointer;
+}
