@@ -1,6 +1,6 @@
 Nomic
 =====
-Desarrollo del juego [a Nomic](http://es.wikipedia.org/wiki/Nomic_(juego) "Nomic") con `jQuery, JavaScript, HTML5 y CSS3`. Hace uso de `localStorage` para guardar y almacenar las reglas del juego. 
+Desarrollo del juego [Nomic](http://es.wikipedia.org/wiki/Nomic_(juego) "Nomic") con `jQuery, JavaScript, HTML5 y CSS3`. Hace uso de `localStorage` para guardar y almacenar las reglas del juego. 
 
 Uso
 ===
