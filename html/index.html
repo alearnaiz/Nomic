@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		
-		<!-- jQuery -->
-		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-		
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../js/index.js"></script>
 		<script type="text/javascript" src="../js/localstorage.js"></script>
-		
-		<!-- CSS -->
-		<link rel="stylesheet" href="../css/index.css">
-		
 		<title>Nomic!</title>
 	</head>
 	<body>
-		
-		<h1 id="textNomic">Bienvenido al juego Nomic!</h1>
-		
-		
-		<button id="start">Nueva partida!</button>
-		<button id="continue">Continuar!</button>
-		
-		<a id="information" href="http://es.wikipedia.org/wiki/Nomic_(juego)" target="_blank">Información</a>
+		<div class="container">
+			<div class="text-center">
+				<h1>Welcome to the game Nomic!</h1>
+				<br/>
+				<button type="button" class="btn btn-primary btn-lg" id="start">New game</button>
+			</div>
+			<button type="button" class="btn btn-success" id="continue">Continue</button>
+			<br/>
+			<br/>
+			<a class="btn btn-info" href="http://en.wikipedia.org/wiki/Nomic" target="_blank">Information</a>
+		</div>
 	</body>
 </html>

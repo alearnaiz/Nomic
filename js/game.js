@@ -23,12 +23,12 @@ function Game($parent, $numberLaws){
 	}
 	
 	this.refreshNumberLaws = function($number){
-		console.log("Numero de leyes: " + this.numberLaws);
+		console.log("Number of laws: " + this.numberLaws);
 		$number.text(this.numberLaws);
 	}
 	
 	this.reset = function(){
-		console.log("Resetamos la partida");
+		console.log("Reset the game");
 		this.numberLaws = 0;
 		$parent.empty();
 		this.refreshNumberLaws($numberLaws);

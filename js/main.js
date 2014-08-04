@@ -25,7 +25,7 @@ $(document).ready(function(){
 	$("#create").click(function(){
 		var val = $("#text").val();
 		if (val){
-			console.log("Creamos ley: " + val);
+			console.log("Create law: " + val);
 			game.addLaw(val);
 			$("#text").val("");
 		}

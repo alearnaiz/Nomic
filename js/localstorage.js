@@ -2,10 +2,23 @@ function HistoryLaw(law){
 	this.law = law;
 }
 
-function addLawToLocalStorage(object){
+function findAndRemove(array, property, value) {
+	var find = false;
+	$.each(array, function(index, result) {
+		if (!find){
+			if(result[property] == value) {
+				//Remove from array
+				array.splice(index, 1);
+				find = true;
+			}
+		}
+   });
+}
+
+function addLawToLocalStorage(text){
 	if (localStorage){
 		var laws = localStorage["laws"];
-		var historyLaw = new HistoryLaw(object);
+		var historyLaw = new HistoryLaw(text);
 		if (!laws){
 			laws = "["+JSON.stringify(historyLaw)+"]";
 		}
@@ -14,16 +27,16 @@ function addLawToLocalStorage(object){
 			history.push(historyLaw);
 			laws = JSON.stringify(history);
 		}
-		console.log("Informacion guardada: " + laws);
+		console.log("Stored information: " + laws);
 		localStorage.setItem("laws", laws);
 	}
 }
 
-function removeLawToLocalStorage(object){
+function removeLawToLocalStorage(text){
 	if (localStorage){
 		var laws = localStorage.getItem("laws");
-		history = JSON.parse(localStorage.getItem("laws"));
-		history.splice(history.indexOf(object), 1);
+		var history = JSON.parse(laws);
+		findAndRemove(history, "law", text);
 		localStorage.setItem("laws", JSON.stringify(history));
 	}
 }
